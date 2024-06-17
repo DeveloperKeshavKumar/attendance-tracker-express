@@ -64,6 +64,14 @@ Serves the HTML form for attendance input.
 
 Handles attendance data submission and stores it in an Excel file.
 
+### GET /admin
+
+Serves the HTML form for admin access control.
+
+### POST /admin
+
+Handles admin authentication and grants access to the attendance submission route for a specified time period.
+
 ### GET /send-data
 
 Serves the HTML form for requesting attendance data.
