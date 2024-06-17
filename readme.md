@@ -38,6 +38,8 @@ This project is an Express server application designed to manage student attenda
     ACCOUNTSID=your_account_sid
     AUTHTOKEN=your_auth_token
     TWILIONUMBER=whatsapp:+your_twilio_whatsapp_number
+    USEREMAIL=admin_username
+    PASSWORD=admin_password
     ```
 
 4. Ensure your Twilio number is enabled for WhatsApp and that your sandbox participants have joined using the code from the Twilio console.
@@ -77,11 +79,13 @@ Handles the request to send attendance data to a specified WhatsApp number.
 ├── controllers
 │   ├── attendance.js  # Contains logic for saving attendance to Excel file
 │   ├── sendData.js    # Contains logic for handling attendance data and sending WhatsApp messages
+|   ├── admin.js       # Contains logic for setting time for attendence 
 ├── public             # Stores static files
 │   ├── logo.png
 │   ├── style.css
 │   ├── success.png
 ├── html
+|   ├── admin.html     # HTML form for admin
 │   ├── index.html     # HTML form for attendance input
 │   ├── reqData.html   # HTML form for requesting attendance data
 │   ├── success.html   # HTML page for success
